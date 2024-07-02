@@ -1,0 +1,74 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background: linear-gradient(to top right,rgb(255, 130, 226),rgb(123, 242, 255));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+    padding-bottom: 2rem;
+}
+.title h1{
+    text-align: center;
+    color: rgb(18, 0, 123);
+    padding: 25px 0px;
+}
+.srt-msg p{
+    text-align: center;
+    font-size: 1.25em;
+    color: rgb(213, 1, 1);
+    font-weight: 600;
+    padding: 5px 0px;
+}
+#score{
+    color: rgb(0, 94, 120);
+    font-size:1.5em;
+    font-weight: 600;
+}
+#Snake-Board{
+    margin: 25px 0px;
+    outline: 2px solid rgb(255, 255, 255);
+}
+#restart-btn{
+    padding: .5rem 1rem;
+    margin: .5rem 0;
+    font-weight: 600;
+    background-color: rgb(0, 164, 74);
+    border: 1px solid transparent;
+    color: #ffffff;
+    transition: all .2s ease;
+}
+#restart-btn:hover{
+    cursor: pointer;
+    background-color: rgb(0, 255, 115);
+    border: 1px solid #000000;
+    color: #000000;
+}
+
+@keyframes bganimation {
+    0%{
+        background-size: 500%;
+        background-position: 0%;
+    }
+    50%{
+        background-size: 500%;
+        background-position: 100%;
+    }
+    100%{
+        background-size: 500%;
+        background-position: 0%;
+    }
+}
+@keyframes gboard {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: .5;
+    }
+}
